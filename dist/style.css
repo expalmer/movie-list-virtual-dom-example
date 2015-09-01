@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font: 100% normal Arial;
+  background: #f9f9f9;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+.sb {
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 700px;
+  box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+  background: #fff;
+}
+
+.sb label {
+  font-size: 16px;
+}
+
+.sb__input {
+  width: 100%;
+  border: solid 1px #ddd;
+  border-radius: 2px;
+  padding: 10px;
+  outline: none;
+  font-size: 1.3em;
+  color: #999;
+  box-shadow: 0 1px 0px #ddd;
+}
+
+.total {
+  display: block;
+  margin: 4px 0 0;
+  color: #001;
+  font-weight: 900;
+  color: #999;
+}
+
+.table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+thead {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.table td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 2px;
+  font-size: 0.9em;
+}
+
+th span {
+	display: inline-block;
+	padding: 3px 6px;
+	border-radius: 3px;
+	border: solid 1px #ddd;
+	color: #000;
+	cursor: pointer;
+}
+
+th span.selected {
+	background: #444;
+	color: #fff;
+	border-color: #000;
+}
+
+td.title {
+ font-weight: 900;
+ font-size: 1em;
+}
+td.img {
+  width: 160px;
+}
+td.years, td.rating {
+  text-align: center;
+}
+td.category span {
+  display: block;
+  margin: 0 0 1px;
+  padding: 2px;
+  font-size: .9em;
+  background: #eee;
+  color: #999;
+}
+td.available {
+ min-width: 120px;
+}
+
+@-webkit-keyframes pulse_animation {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale(1); }
+	40% { -webkit-transform: scale(1.08); }
+	50% { -webkit-transform: scale(1); }
+	60% { -webkit-transform: scale(1); }
+	70% { -webkit-transform: scale(1.05); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: 'pulse_animation';
+	-webkit-animation-duration: 700ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+          animation-name: 'pulse_animation';
+	        animation-duration: 700ms;
+	        transform-origin:70% 70%;
+	        /*animation-iteration-count: infinite;*/
+	        animation-timing-function: linear;
+}

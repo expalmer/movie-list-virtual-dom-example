@@ -1,0 +1,15 @@
+{
+  "name": "movie-list-virtual-dom",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "watchify -d src/app.js -o dist/bundle.js -v",
+    "start": "npm run watch"
+  },
+  "author": "Palmer Oliveira <expalmer@gmail.com> (https://github.com/expalmer)",
+  "license": "ISC",
+  "dependencies": {
+    "virtual-dom": "^2.1.1",
+    "watchify": "^3.3.1"
+  }
+}
